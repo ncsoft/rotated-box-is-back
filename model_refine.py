@@ -440,17 +440,6 @@ class Textregressor_fpn(object):
         loss_log = tf.log(tf.nn.softmax(classifier_ch) + 1e-5)
         loss_gather_nd = tf.gather_nd(loss_log, gt_gather_idx)
         score_loss = tf.reduce_mean(-1. * loss_gather_nd * score_mask)
-        #score_loss = tf.where(tf.math.is_nan(score_loss), tf.zeros_like(score_loss), score_loss)
-        #loss = tf.where(tf.math.is_nan(loss), tf.zeros_like(loss), loss)
-
-
-        # debug = tf.py_func(debug_loss, ["score_loss", score_loss, "classifier_ch", classifier_ch,
-        #                                 "offset_anchor_inverse", offset_anchor_inverse], tf.int64)
-        # debug = tf.cast(debug, tf.float32)
-
-        # debug2 = tf.py_func(debug_loss, ["loss", loss, "gt_regressor", gt_regressor,
-        #                                 "gather_regressor_value", gather_regressor_value], tf.int64)
-        # debug2 = tf.cast(debug2, tf.float32)
 
         tf.summary.scalar('regressor_loss', loss)
         tf.summary.scalar('classifier_loss', score_loss)
@@ -468,16 +457,6 @@ class Textregressor_fpn(object):
         tf.summary.image('debugclassimg', debugclassimg)
 
         return score_loss + loss
-
-
-def debug_loss(name_1, loss_1, name_2, loss_2, name_3, loss_3 ):
-    name_1 = name_1.decode("utf-8")
-    name_2 = name_2.decode("utf-8")
-    name_3 = name_3.decode("utf-8")
-    print("{} : {}".format(name_1, loss_1))
-    print("{} : {}".format(name_2, loss_2))
-    print("{} : {}".format(name_3, loss_3))
-    return 0
 
 
 class TextmapNetwork(object):
@@ -739,9 +718,6 @@ class TextmapNetwork(object):
         tf.summary.image('pos_choice_mask', tf.cast(pos_choice_mask, tf.float32))
         tf.summary.image('neg_choice_mask', tf.cast(neg_choice_mask, tf.float32))
 
-        # debug = tf.py_func(debug_loss, ["L_geometry_AABB", L_geometry_AABB, "L_classification_loss", classification_loss,
-        #                                 "L_AABB", tf.reduce_mean(L_AABB)], tf.int64)
-        # debug = tf.cast(debug, tf.float32)
 
         return L_geometry_AABB + classification_loss
 
