@@ -1,13 +1,14 @@
-# Rotated box is back : Accurate Box Proposal Network for Scene Text Detection #
+# Rotated Box Is Back : Accurate Box Proposal Network for Scene Text Detection #
 ![overview](./images/overview.jpg)
-## This material is supplementray code for our paper ##
+## This material is supplementray code for paper accepted in ICDAR 2021 ##
 1. We highly recommend to use docker image because our model contains custom operation which depends on framework and cuda version.
 2. We provide trained model for ICDAR 2017, 2013 which is in final_checkpoint_ch8 and for ICDAR 2015 which is in final_checkpoint_ch4
 3. This code is mainly focused on inference. To train our model, training gpu like V100 is needed. please check our paper in detail. 
 
 ### REQUIREMENT ###
 1. Nvidia-docker 
-2. Miminum GPU requirement : NVIDIA GTX 1080TI
+2. Tensorflow 1.14
+3. Miminum GPU requirement : NVIDIA GTX 1080TI
 
 ### INSTALLATION ###
 * Make docker image and container

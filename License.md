@@ -10,17 +10,17 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCI DENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Any questions about our licensed work can be sent to opensource@ncsoft.com.  
+Any questions about our licensed work can be sent to opensource@ncsoft.com.
 ________________________________________
 
 This software uses Open Source Software (OSS). You can find the link for the source code of these open source projects, along with applicable license information, below.
 
-Faster R-CNN
-https://github.com/rbgirshick/py-faster-rcnn 
-Copyright (c) 2015 Microsoft Corporation
+Faster R-CNN <br>
+https://github.com/rbgirshick/py-faster-rcnn <br>
+Copyright (c) 2015 Microsoft Corporation <br>
 MIT License
 
-Pybind11
-https://github.com/pybind/pybind11 
-Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>
+Pybind11 <br>
+https://github.com/pybind/pybind11 <br>
+Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch> <br>
 BSD 3-Clause "New" or "Revised" License
