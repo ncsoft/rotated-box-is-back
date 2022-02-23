@@ -61,11 +61,12 @@ python text_postprocessing.py -i=./ic13/ -o=./ic13_format/ -e True -m rec
 ```
 
 ### EVALUATION TABLE ###
-<table style="text-align:center">
+<div align="center">
+<table>
   <tr>
-    <td style="text-align:center" colspan="3">IC13</td>
-    <td style="text-align:center" colspan="3">IC15</td>
-    <td style="text-align:center" colspan="3">IC17</td>
+    <td colspan="3">IC13</td>
+    <td colspan="3">IC15</td>
+    <td colspan="3">IC17</td>
   </tr>
   <tr>
     <td>P</td>
@@ -92,6 +93,7 @@ python text_postprocessing.py -i=./ic13/ -o=./ic13_format/ -e True -m rec
 
 
 </table>
+</div>
 
 ### TRAINING ###
 1. It can be trained below command line
